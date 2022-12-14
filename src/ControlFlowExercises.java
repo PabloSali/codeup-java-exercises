@@ -1,3 +1,5 @@
+import java.util.Scanner; // Placed outside of main class
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
         //1 a
@@ -48,6 +50,20 @@ public class ControlFlowExercises {
 //        }while(i <= 100);
 
         //3
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Choose an Integer to begin: ");
+//        int userNum = scanner.nextInt();
+//        int counter = 1;
+//        do {
+//            if (counter == 1) {
+//                System.out.println("number | squared | cubed");
+//                System.out.println("------------------------");
+//            }
+//        System.out.println((counter) + "    |   " + (counter * counter) + "     |   " + (counter * counter * counter));
+//            counter++;
+//        }while(counter <= userNum);
+
 
     }
 }
