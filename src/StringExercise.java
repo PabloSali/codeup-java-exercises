@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class StringExercise {
     public static void main(String[] args) {
         String str = "We don't need no education";
