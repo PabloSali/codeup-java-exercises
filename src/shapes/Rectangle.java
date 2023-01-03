@@ -1,16 +1,30 @@
 package shapes;
 
-public class Rectangle {
-    public static void main(String[] args) {
+public class Rectangle extends Quadrilateral{
 
-    }
-    int area;
+        public Rectangle(long length, long width) {
+            super(length, width);
+        }
 
-    public void getArea(int length, int width){
-        this.area = length * width;
-    }
+        @Override
+        public void setlength(long length) {
+            super.length = length;
+        }
 
-    public void getPerimeter(int length, int width){
-        this.area = length + width;
-    }
+        @Override
+        public void setWidth(long width) {
+            super.width = width;
+        }
+
+        @Override
+        public long getArea() {
+            // Auto-generated method stub
+            return 0;
+        }
+
+        @Override
+        public long getPerimeter() {
+            // Auto-generated method stub
+            return 0;
+        }
 }
