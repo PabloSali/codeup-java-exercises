@@ -1,6 +1,6 @@
 package shapes;
 
-public interface Measurables {
+public interface Measurable {
     long getArea();
     long getPerimeter();
 }
