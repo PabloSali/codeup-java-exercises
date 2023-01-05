@@ -25,7 +25,7 @@ public class MethodsExercise {
     }
 
     // Q1
-     public static double add(double int1, double int2){
+    public static double add(double int1, double int2){
         return int1 + int2;
      }
     public static double sub(double int1, double int2){
