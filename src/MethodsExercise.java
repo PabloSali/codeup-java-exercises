@@ -14,14 +14,6 @@ public class MethodsExercise {
         System.out.println("Multiplication: " + mul(num1, num2));
         System.out.println("Remainder: " + mod(num1, num2));
 
-        // 2
-            getInteger();
-
-        // 3
-
-
-        // 4
-
     }
 
     // Q1
