@@ -59,18 +59,64 @@ public class MethodsExercise {
         } while (inRange);
     }
     // Q3
-    public static void factorial(){
+    public static void getFactorial() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose an integer between 1 - 10.");
+        boolean keepGoing = false;
+        boolean numValid;
+
+        do {
+            System.out.print("Enter a number between 1 - 10 for factorial: ");
+            long userInput = scanner.nextLong();
+
+            if (userInput >= 1 & userInput <= 10) {
+                numValid = true;
+
+                long factorial = 1;
+                for(int i = 1; i <= userInput; ++i) {
+                    factorial *= i;
+                }
+                System.out.println("The factorial for " + userInput + " is " + factorial);
+
+                scanner.nextLine();
+                System.out.print("Would you like to continue? [y/n] ");
+                String answer = scanner.nextLine();
+
+                if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
+                    keepGoing = true;
+                } else {
+                    keepGoing = false;
+                }
+            } else {
+                numValid = false;
+            }
+
+        } while (!numValid || keepGoing);
 
     }
 
-    // Q4
-    public static void dice(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("How many sides does your dice have?: ");
-        int userNum = scanner.nextInt();
 
+    // Q4
+    public static void diceRoll() {
+            Scanner scanner = new Scanner(System.in);
+            boolean keepGoing;
+            do {
+                System.out.print("\nHow many sides on your dice? ");
+                int sides = scanner.nextInt();
+                int randomSide1 = (int) Math.floor(Math.random() * sides + 1);
+                int randomSide2 = (int) Math.floor(Math.random() * sides + 1);
+                System.out.println("First die roll: " + randomSide1);
+                System.out.println("Second die roll: " + randomSide2);
+
+                System.out.print("Would you like to play again? [y/n] ");
+                scanner.nextLine();
+                String answer = scanner.nextLine();
+
+                if (answer.equalsIgnoreCase("y")) {
+                    keepGoing = true;
+                } else {
+                    keepGoing = false;
+                }
+            } while (keepGoing);
 
     }
 
