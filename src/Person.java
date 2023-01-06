@@ -1,6 +1,6 @@
 public class Person {
     // Exercise 1 - Object Basics
-    private String name;
+    public String name;
 
     // constructor
     public Person(String name) {
