@@ -17,13 +17,11 @@ public class Square extends Quadrilateral {
 
     @Override
     public long getArea() {
-        // Auto-generated method stub
         return 0;
     }
 
     @Override
     public long getPerimeter() {
-        // Auto-generated method stub
         return 0;
     }
 }
