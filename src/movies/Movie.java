@@ -9,7 +9,7 @@ public class Movie {
         this.category = category;
     }
 
-    public String getName(){
+    public String  getName(){
         return name;
     }
     public void setName(String name){
